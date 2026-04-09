@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mindful Family Guide — Parent with Purpose, Connect with Heart</title>
+  <meta name="description" content="Expert parent coaching to help you shift from reaction to leadership, from frustration to understanding. Break generational patterns and build connected, loving relationships with your children." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mindful Family Guide — Parent with Purpose, Connect with Heart" />
+  <meta property="og:description" content="Expert parent coaching to help you shift from reaction to leadership, from frustration to understanding." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mindfulfamilyguide.com" />
+
+  <!-- Fonts: Zodiak (display) + General Sans (body) from Fontshare -->
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,600&f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <!-- Splitting.js for character animation -->
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js" defer></script>
+
+  <!-- Rough Notation for hand-drawn highlights -->
+  <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js" defer></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./base.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Mindful Family Guide",
+    "description": "Expert parent coaching to help you shift from reaction to leadership, from frustration to understanding.",
+    "telephone": "(317) 416-9245",
+    "url": "https://mindfulfamilyguide.com",
+    "priceRange": "$$",
+    "serviceType": "Parent Coaching"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Grain Texture Overlay -->
+  <svg class="grain-overlay" width="100%" height="100%">
+    <filter id="grain-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain-filter)" />
+  </svg>
+
+  <!-- ════════════════ HEADER ════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Mindful Family Guide — Home">
+        <!-- Custom SVG Logo: two overlapping circles (parent + child) with leaf -->
+        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <!-- Parent circle -->
+          <circle cx="16" cy="22" r="12" stroke="currentColor" stroke-width="1.8" fill="none" opacity="0.7"/>
+          <!-- Child circle -->
+          <circle cx="26" cy="22" r="8" stroke="currentColor" stroke-width="1.8" fill="none" opacity="0.9"/>
+          <!-- Leaf at top where circles overlap -->
+          <path d="M21 6 C21 6 16 10 18 16 C19 13 23 10 25 8 C24 7 22 6 21 6Z" fill="currentColor" opacity="0.8"/>
+          <path d="M21 6 C21 8 20 11 19.5 13" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+        </svg>
+        <div class="logo-text">
+          Mindful Family<br/>Guide
+          <span>Parent Coaching</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#approach" class="nav-link">Approach</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#contact" class="btn-nav-cta">Book a Call</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#approach">Approach</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Stories</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="btn-primary" style="margin-top: var(--space-4);">Book a Call</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- ════════════════ HERO ════════════════ -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-image-wrap">
+        <img src="./assets/hero.webp" alt="Parent and child walking hand in hand through a golden meadow at sunset" width="1456" height="816" loading="eager" decoding="async" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow fade-in">Mindful Family Guide</p>
+        <h1 class="hero-title" data-splitting>Parent with Purpose, Connect with Heart</h1>
+        <p class="hero-subtitle fade-in">You don't have to figure this out alone. We help parents shift from reaction to leadership — from frustration to genuine, lasting connection.</p>
+        <div class="hero-actions fade-in">
+          <a href="#contact" class="btn-primary">
+            Schedule Your Consultation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#about" class="btn-secondary">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ INTRO / THE PROBLEM ════════════════ -->
+    <section id="about" class="intro-section section--lg" aria-label="About our approach">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text fade-in">
+            <p class="section-eyebrow">The Reality</p>
+            <h2>Parenting Shouldn't Feel Like Survival Mode</h2>
+            <p>If you find yourself yelling, feeling frustrated, or struggling to connect with your child — you're not alone. Many of us were raised to believe that discipline means control and that respect is demanded, not modeled.</p>
+            <p>But what if there was <span id="annotate-another" class="text-accent">another way</span>? A way rooted in understanding, boundaries, and unconditional love?</p>
+            <p>At Mindful Family Guide, we help parents shift from reaction to <strong>leadership</strong> — from frustration to <strong>understanding</strong> — from conflict to <strong>connection</strong>.</p>
+          </div>
+          <div class="intro-image fade-in">
+            <img src="./assets/connection.webp" alt="Parent's hands gently holding a child's hands in a warm, intimate moment" width="1024" height="768" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ FULL-BLEED QUOTE ════════════════ -->
+    <section class="quote-section section--lg" aria-label="Inspirational quote">
+      <div class="quote-bg">
+        <img src="./assets/journey.webp" alt="" width="1456" height="816" loading="lazy" decoding="async" aria-hidden="true" />
+      </div>
+      <div class="quote-overlay"></div>
+      <div class="quote-content container fade-in">
+        <blockquote>"The way we talk to our children becomes their inner voice."</blockquote>
+        <cite>— Peggy O'Mara</cite>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ TRANSFORMATION / BENEFITS ════════════════ -->
+    <section id="approach" class="transform-section section--lg" aria-label="What you'll gain">
+      <div class="container">
+        <div class="transform-header fade-in">
+          <p class="section-eyebrow">The Transformation</p>
+          <h2>What Changes When You Lead with Love</h2>
+          <p>Every family is different, but the shift from reactive parenting to mindful leadership creates ripple effects that transform your entire household.</p>
+        </div>
+        <div class="transform-grid">
+          <div class="transform-card fade-in">
+            <span class="card-number">01</span>
+            <h3>Break the Cycle</h3>
+            <p>Release generational parenting patterns that no longer serve your family. Replace inherited habits with intentional, nurturing responses.</p>
+          </div>
+          <div class="transform-card fade-in">
+            <span class="card-number">02</span>
+            <h3>Set Loving Boundaries</h3>
+            <p>Learn to hold boundaries that are both firm and compassionate. Your children will feel safe, respected, and understood.</p>
+          </div>
+          <div class="transform-card fade-in">
+            <span class="card-number">03</span>
+            <h3>Navigate Meltdowns</h3>
+            <p>Respond to tantrums and emotional storms without losing your own peace. You'll become the calm your child needs.</p>
+          </div>
+          <div class="transform-card fade-in">
+            <span class="card-number">04</span>
+            <h3>Build Real Respect</h3>
+            <p>Create relationships rooted in mutual respect — not fear or obligation. Connection becomes the foundation of your home.</p>
+          </div>
+          <div class="transform-card fade-in">
+            <span class="card-number">05</span>
+            <h3>Find Your Confidence</h3>
+            <p>Stop second-guessing every parenting decision. Trust yourself to lead your family with clarity and conviction.</p>
+          </div>
+          <div class="transform-card fade-in">
+            <span class="card-number">06</span>
+            <h3>Model What Matters</h3>
+            <p>Show your children what emotional intelligence looks like. They learn resilience, empathy, and self-regulation by watching you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ SERVICES ════════════════ -->
+    <section id="services" class="services-section section--lg" aria-label="Our services">
+      <div class="container">
+        <div class="services-header fade-in">
+          <p class="section-eyebrow">How We Help</p>
+          <h2>Coaching That Meets You Where You Are</h2>
+          <p>No judgment, no scripts, no one-size-fits-all. Just real support tailored to your family's unique journey.</p>
+        </div>
+
+        <div class="services-layout">
+          <div class="service-card featured fade-in">
+            <div class="service-icon">
+              <i data-lucide="heart-handshake" style="width:28px;height:28px;"></i>
+            </div>
+            <h3>Personalized Parent Coaching</h3>
+            <p>One-on-one sessions designed around your specific challenges. Together, we'll uncover patterns, build new strategies, and create a parenting approach that feels authentic to you. This is your space to reflect, learn, and grow — without judgment.</p>
+            <p>Sessions are available virtually so you can connect from wherever you're most comfortable.</p>
+            <a href="#contact" class="service-detail">
+              Schedule a session
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <i data-lucide="lightbulb" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Practical Tools & Strategies</h3>
+            <p>Walk away from every session with real-life techniques you can start using today. From de-escalation scripts to boundary-setting frameworks — these are tools that work in the trenches of daily parenting.</p>
+            <a href="#contact" class="service-detail">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <i data-lucide="shield-check" style="width:24px;height:24px;"></i>
+            </div>
+            <h3>Judgment-Free Support</h3>
+            <p>Parenting is a journey, not a test. This is a safe space where you can be honest about your struggles, celebrate your wins, and know that you're supported every step of the way.</p>
+            <a href="#contact" class="service-detail">
+              Get started
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ STORY / FOUNDER ════════════════ -->
+    <section class="story-section section--lg" aria-label="Our story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image fade-in">
+            <img src="./assets/botanical.webp" alt="Natural botanical arrangement with sage leaves and terracotta flowers on linen" width="1024" height="1024" loading="lazy" decoding="async" />
+          </div>
+          <div class="story-text fade-in">
+            <p class="section-eyebrow">Our Story</p>
+            <h2>Born From the Struggle</h2>
+            <p>There was a time when frustration ran my household. I was repeating the same patterns I grew up with — raising my voice, reacting instead of responding, and feeling more disconnected from my child every day.</p>
+            <p class="story-highlight">"I realized the change my family needed had to start with me."</p>
+            <p>That realization changed everything. I began studying mindful parenting, childhood development, and emotional leadership. I learned that discipline doesn't have to mean control, and that respect is something we <em>model</em>, not demand.</p>
+            <p>Today, Mindful Family Guide exists because every parent deserves the tools and support to parent with confidence, connection, and love — without losing themselves in the process.</p>
+            <hr class="divider" />
+            <p><strong>You don't have to parent the way you were raised.</strong> And you don't have to feel like you're failing. There's a better way — and I'm here to walk it with you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ TESTIMONIALS ════════════════ -->
+    <section id="testimonials" class="testimonials-section section--lg" aria-label="What parents say">
+      <div class="container">
+        <div class="testimonials-header fade-in">
+          <p class="section-eyebrow">Parent Stories</p>
+          <h2>Real Families, Real Transformation</h2>
+        </div>
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+            </div>
+            <blockquote>"I used to dread bedtime because it always turned into a battle. After just three sessions, I learned how to set boundaries with love instead of frustration. My daughter actually asks me to tuck her in now."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J</div>
+              <div class="testimonial-author-info">
+                <strong>Jessica M.</strong>
+                <span>Mother of two</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+            </div>
+            <blockquote>"I didn't realize how much my own upbringing was shaping my reactions. This coaching helped me break patterns I didn't even know I had. My relationship with my son has completely transformed."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">D</div>
+              <div class="testimonial-author-info">
+                <strong>David R.</strong>
+                <span>Father of one</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+              <i data-lucide="star" style="width:16px;height:16px;fill:currentColor;"></i>
+            </div>
+            <blockquote>"The judgment-free space was exactly what I needed. I could finally be honest about my struggles without feeling like a failure. The practical tools made an immediate difference in our daily life."</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div class="testimonial-author-info">
+                <strong>Sarah K.</strong>
+                <span>Mother of three</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ FAQ ════════════════ -->
+    <section id="faq" class="faq-section section--lg" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-header fade-in">
+            <p class="section-eyebrow">Questions</p>
+            <h2>Common Questions</h2>
+            <p>Everything you need to know before starting your journey.</p>
+          </div>
+          <div class="faq-list">
+
+            <div class="faq-item fade-in">
+              <button class="faq-question" aria-expanded="false">
+                What exactly is parent coaching?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Parent coaching is a collaborative partnership where we work together to identify challenges, uncover patterns, and build practical strategies for your unique family situation. Unlike therapy, coaching is action-oriented and focused on moving forward with confidence.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in">
+              <button class="faq-question" aria-expanded="false">
+                How are sessions conducted?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Sessions are conducted virtually via video call, making it easy for you to connect from wherever you're most comfortable. Each session typically lasts 45-60 minutes and is tailored to your specific needs and goals.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in">
+              <button class="faq-question" aria-expanded="false">
+                How quickly will I see results?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Many parents notice shifts after just one or two sessions — especially in how they respond to challenging moments. Deeper transformations, like breaking generational patterns, unfold over time with consistent practice and support.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in">
+              <button class="faq-question" aria-expanded="false">
+                Is this only for parents who are struggling?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>Not at all. Coaching is for any parent who wants to be more intentional. Whether you're navigating a specific challenge or simply want to strengthen your connection with your children, there's always room to grow.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item fade-in">
+              <button class="faq-question" aria-expanded="false">
+                What ages of children do you work with?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+              </button>
+              <div class="faq-answer" role="region">
+                <div class="faq-answer-inner">
+                  <p>We work with parents of children at all stages — from toddlers to teenagers. The principles of mindful parenting and emotional leadership apply across all ages, though the strategies are adapted to each developmental stage.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════ CTA ════════════════ -->
+    <section id="contact" class="cta-section section--lg" aria-label="Schedule consultation">
+      <div class="container">
+        <div class="cta-content fade-in">
+          <p class="section-eyebrow">Begin Your Journey</p>
+          <h2>The Future Your Family Deserves Starts Here</h2>
+          <p>Parent with confidence, connection, and love. Schedule your free consultation call today and take the first step toward the family life you've been longing for.</p>
+          <a href="tel:+13174169245" class="btn-cta">
+            Schedule Your Consultation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+13174169245" class="cta-phone">(317) 416-9245</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo" aria-label="Mindful Family Guide — Home">
+            <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="width:36px;height:36px;">
+              <circle cx="16" cy="22" r="12" stroke="currentColor" stroke-width="1.8" fill="none" opacity="0.7"/>
+              <circle cx="26" cy="22" r="8" stroke="currentColor" stroke-width="1.8" fill="none" opacity="0.9"/>
+              <path d="M21 6 C21 6 16 10 18 16 C19 13 23 10 25 8 C24 7 22 6 21 6Z" fill="currentColor" opacity="0.8"/>
+              <path d="M21 6 C21 8 20 11 19.5 13" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+            </svg>
+          </a>
+          <p>Helping parents shift from reaction to leadership, from frustration to understanding, and from conflict to connection.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul role="list">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Book a Call</a></li>
+            <li><a href="tel:+13174169245">(317) 416-9245</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul role="list">
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="mailto:hello@mindfulfamilyguide.com">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mindful Family Guide. All rights reserved.</p>
+        <p>Parent with purpose. Connect with heart.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="./app.js" defer></script>
+</body>
+</html>
